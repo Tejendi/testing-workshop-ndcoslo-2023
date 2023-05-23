@@ -89,6 +89,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingCalculator.Tests.Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHub.Api.Fake", "2.IntegrationTesting\1.ApiTesting\src\GitHub.Api.Fake\GitHub.Api.Fake.csproj", "{70A6604B-F1F2-4015-B6CD-CEAED516A902}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.PerformanceTesting", "3.PerformanceTesting", "{C66505B0-2C0B-4A07-8E49-A72E356ECEC6}"
+	ProjectSection(SolutionItems) = preProject
+		3.PerformanceTesting\smoke-test.js = 3.PerformanceTesting\smoke-test.js
+		3.PerformanceTesting\load-test.js = 3.PerformanceTesting\load-test.js
+		3.PerformanceTesting\stress-test.js = 3.PerformanceTesting\stress-test.js
+		3.PerformanceTesting\spike-test.js = 3.PerformanceTesting\spike-test.js
+		3.PerformanceTesting\soak-test.js = 3.PerformanceTesting\soak-test.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

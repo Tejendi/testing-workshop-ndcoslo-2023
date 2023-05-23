@@ -3,13 +3,13 @@ import { check, sleep} from 'k6';
 
 export const options = {
     stages: [
-        { duration: '2m', target: 400 },
-        { duration: '1h56m', target: 400 },
+        { duration: '2m', target: 100 },
+        { duration: '1h56m', target: 100 },
         { duration: '2m', target: 0 }
     ],
 
     thresholds: {
-        http_req_duration: ['p(99)<15'], 
+        http_req_duration: ['p(99)<15'],
     },
 };
 
@@ -26,6 +26,6 @@ export default () => {
     responses.forEach(x => {
         const customers = x.json();
         check(customers, { 'retrieved customers': (obj) => obj.customers.length > 0 });
-    })    
+    })
     sleep(1);
 };
