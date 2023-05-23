@@ -15,6 +15,8 @@
         <PackageReference Include="Ductus.FluentDocker" Version="2.10.59" />
         <PackageReference Include="FluentAssertions" Version="6.10.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+        <PackageReference Include="Microsoft.Playwright" Version="1.33.0" />
+        <PackageReference Include="Respawn" Version="6.0.0" />
         <PackageReference Include="WireMock.Net" Version="1.5.21" />
         <PackageReference Include="xunit" Version="2.4.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
